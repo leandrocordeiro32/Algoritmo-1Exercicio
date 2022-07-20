@@ -14,18 +14,18 @@ public class InsercaoDados {
         String nome;
         int idade = 0;
         char sexo;
-        double saldo;
+        double saldo = 0.0;
         
-        System.out.println("Informe o nome: ");
+        System.out.print("Informe o nome: ");
         nome = leia.nextLine();
         
-        System.out.println("Informe a idade: ");
+        System.out.print("Informe a idade: ");
         idade = leia.nextInt();
         
-        System.out.println("Informe o sexo: ");
+        System.out.print("Informe o sexo: ");
         sexo = leia.next().charAt(0);
         
-        System.out.println("Informe seu saldo bancário: ");
+        System.out.print("Informe seu saldo bancário: ");
         saldo = leia.nextDouble();
         
         System.out.println(nome + " tem " + idade + " anos, seu sexo é "
