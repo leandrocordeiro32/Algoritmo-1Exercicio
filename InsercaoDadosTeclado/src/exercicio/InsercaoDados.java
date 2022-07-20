@@ -28,7 +28,8 @@ public class InsercaoDados {
         System.out.println("Informe seu saldo bancário: ");
         saldo = leia.nextDouble();
         
-        System.out.println(nome + " tem " + idade + " anos, seu sexo é " + sexo + " e possui a fortuna de R$ " + saldo + "reais no banco.");
+        System.out.println(nome + " tem " + idade + " anos, seu sexo é "
+        + sexo + " e possui a fortuna de R$ " + saldo + " reais no banco.");
         
         leia.close();
 	}
