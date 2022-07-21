@@ -12,12 +12,16 @@ public class AtividadeOperadoreslll {
 
 		Scanner leia = new Scanner(System.in);
 		
-		double f = 0.0;
+		double fahrenheit = 0.0;
+		double celsius = 0.0;
 		
 		System.out.print("Informe a temperatura em Fahrenheit para convertermos em Celsius: ");
-		f = leia.nextDouble();
+		fahrenheit = leia.nextDouble();
 		
-		System.out.println("A temperatura em Celsius é " + (5 * (f - 32)/9) + " graus Celsius.");
+		celsius = (5 * (fahrenheit - 32)/9);
+		
+		System.out.println("A temperatura em Celsius é " + celsius + " graus Celsius.");
+	
 		
 		leia.close();
 	}

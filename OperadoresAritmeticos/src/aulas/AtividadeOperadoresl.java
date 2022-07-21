@@ -19,6 +19,21 @@ public class AtividadeOperadoresl {
 		
 		System.out.println("A soma dos números é igual a " + (a + b));
 		
+		//Outra forma de resolver:
+		
+        // double a , b = 0.0
+        double soma;
+		
+		System.out.print("Insira um número qualquer: ");
+		a = leia.nextDouble();
+		
+		System.out.print("Insira outro número qualquer: ");
+		b = leia.nextDouble();
+		
+		soma = a + b;
+		
+		System.out.println("A soma dos números é igual a " + soma);
+		
 		leia.close();
 
 

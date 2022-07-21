@@ -25,6 +25,27 @@ public class AtividadeOperadoresAritmeticos {
 			
 		System.out.println("A média das suas notas é: " + (nota1 + nota2 + nota3 + nota4)/4);		
 		
+		//Outra forma de resolver:
+		
+        //double nota1 , nota2 , nota3 , nota4 = 0.0;
+		double media = 0.00;
+		
+		System.out.print("Insira a 1ª nota: ");
+		nota1 = leia.nextDouble();
+		
+		System.out.print("Insira a 2ª nota: ");
+		nota2 = leia.nextDouble();
+		
+		System.out.print("Insira a 3ª nota: ");
+		nota3 = leia.nextDouble();
+		
+		System.out.print("Insira a 4ª nota: ");
+		nota4 = leia.nextDouble();
+			
+		media = (nota1 + nota2 + nota3 + nota4)/4;
+		
+		System.out.println("A média das suas notas é: " + media);
+		
 		leia.close();
 		
 
