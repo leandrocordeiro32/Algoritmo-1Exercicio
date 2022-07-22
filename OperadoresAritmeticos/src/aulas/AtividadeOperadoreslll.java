@@ -20,7 +20,7 @@ public class AtividadeOperadoreslll {
 		
 		celsius = (5 * (fahrenheit - 32)/9);
 		
-		System.out.println("A temperatura em Celsius é " + celsius + " graus Celsius.");
+		System.out.printf("A temperatura em Celsius é %.2f graus Celsius", celsius);
 	
 		
 		leia.close();
