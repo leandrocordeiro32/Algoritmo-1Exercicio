@@ -16,9 +16,9 @@ public class SwitchCase {
 	System.out.println("1 - Sanduiche natureba");
 	System.out.println("2 - Sanduba Bomba");
 	System.out.println("3 - Coxinha de Jaca");		   			
-	System.out.println("4 - Feijoada vegetariana");		
+	System.out.println("4 - Feijoada vegetariana");	
 	System.out.println("Escolha um dos itens de menu:");
-
+	
 	int menu = leia.nextInt();
 	int quantidade = 0;
 	
@@ -43,7 +43,7 @@ public class SwitchCase {
 	quantidade = leia.nextInt();
 	
 	System.out.println("Seu pedido foi " + quantidade + " " + menu);
-	
+
 	leia.close();
 
 	}
