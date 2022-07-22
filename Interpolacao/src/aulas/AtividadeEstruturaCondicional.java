@@ -47,17 +47,20 @@ public class AtividadeEstruturaCondicional {
 	if(numero1 > numero2 && numero1 > numero3) {
 		System.out.println("O número maior é: " + numero1);
 	}
+	
 	else if(numero2 > numero3) {
 		System.out.println("O número maior é: " + numero2);
-	}	
+	}
+	
 	else if(numero1 == numero2 && numero1 == numero3 && numero2 == numero3) {
 			System.out.println("Números iguais");
 	}
+	
 	else {
 		System.out.println("O número maior é: " + numero3);
+		
 	}
 	
-
 	leia.close();
 	
 	}
