@@ -2,7 +2,7 @@ package aulas;
 
 import java.util.Scanner;
 
-public class InterpolacaoECondicional {
+public class OperadoresComparativosLogicos {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

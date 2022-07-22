@@ -1,6 +1,6 @@
 package aulas;
 
-public class Interpolacao {
+public class Printf {
 
 	public static void main(String[] args) {
 		
