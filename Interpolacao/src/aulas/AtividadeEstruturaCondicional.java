@@ -40,10 +40,10 @@ public class AtividadeEstruturaCondicional {
 	System.out.print("Insira o último número: ");
 	numero3 = leia.nextDouble();
 	
-	if(numero1 > numero2 && numero1 > numero3) {
+	if(numero1 >= numero2 && numero1 >= numero3) {
 		System.out.println("O número maior é: " + numero1);
 	}
-	if(numero2 > numero1 && numero2 > numero3) {
+	else if(numero2 >= numero1 && numero2 >= numero3) {
 		System.out.println("O número maior é: " + numero2);
 	}
 	else {
