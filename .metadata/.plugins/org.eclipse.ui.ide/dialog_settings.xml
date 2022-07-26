@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\Usuário\Documents\TI\Desenvolvedor Java\Arquivos Java"/>
 			<item value="D:\Usuário\Documents\TI\Desenvolvedor Java\Arquivos Java\PrimeiroProgramaJava"/>
 			<item value="D:\Usuário\Documents\TI\Desenvolvedor Java\Arquivos Java\Algoritmo-1Exercicio"/>
 			<item value="D:\Usuário\Documents\TI\Desenvolvedor Java\PrimeiroProgramaJava"/>
@@ -16,5 +17,7 @@
 		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 		</list>
+	</section>
+	<section name="org.eclipse.ui.internal.views.markers.FiltersConfigurationDialog">
 	</section>
 </section>
