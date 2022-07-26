@@ -32,8 +32,6 @@ public class AtividadeRepeticaI {
 
 	}
 	
-
-	
 	sc.close();
 
 	}
