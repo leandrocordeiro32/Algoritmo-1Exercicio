@@ -30,7 +30,7 @@ public class AtividadeRepeticaoIII {
 	System.out.print("Informe a idade: ");
 	idade = sc.nextInt();
 	
-	while (idade < 0 || idade > 150) {
+	while (idade <= 0 || idade > 150) {
 		System.out.print("Idade Inválida! Digite novamente: ");
 		idade = sc.nextInt();
 	}
@@ -46,7 +46,8 @@ public class AtividadeRepeticaoIII {
 	System.out.print("Informe o sexo > (F) Femininno > (M) Masculino: ");
 	sexo = sc.next().charAt(0);
 	
-	while (Character.toUpperCase(sexo) != 'M' && Character.toUpperCase(sexo) != 'F') {
+	while (Character.toUpperCase(sexo) != 'M' &&
+			Character.toUpperCase(sexo) != 'F') {
 		System.out.println("Sexo Inválido! Digite novamente: ");
 		sexo = sc.next().charAt(0);
 	}
