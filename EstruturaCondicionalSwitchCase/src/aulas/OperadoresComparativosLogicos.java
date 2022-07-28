@@ -20,7 +20,7 @@ public class OperadoresComparativosLogicos {
 		 *  !	Não/Negação
 		 *  
 		 *  Operadores de incremento, decremento e mais
-		 *  =	o mesmo que		 x = x + numero
+		 * +=	o mesmo que		 x = x + numero
 		 * -=	o mesmo que		 x = x – numero
 		 * *=	o mesmo que		 x = x * numero
 		 * /=	o mesmo que 		 x = x / numero
