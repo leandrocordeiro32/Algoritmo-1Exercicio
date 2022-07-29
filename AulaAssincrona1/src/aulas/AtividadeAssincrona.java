@@ -20,25 +20,25 @@ public class AtividadeAssincrona {
 	voto = sc.nextInt();
 	
 		while (voto == 12) {
-		gomes += 1;
+		gomes += gomes++;
 		System.out.print("Se a eleição fosse hoje, qual seria sua intençao de voto? ");
 		voto = sc.nextInt();
 		}
 			
 		while (voto == 13) {
-		molusco += 1;
+		molusco += molusco++;
 		System.out.print("Se a eleição fosse hoje, qual seria sua intençao de voto? ");
 		voto = sc.nextInt();
 		}
 		
 		while (voto == 17) {
-		bozo += 1;
+		bozo += bozo++;
 		System.out.print("Se a eleição fosse hoje, qual seria sua intençao de voto? ");
 		voto = sc.nextInt();
 		}
 		
 		while (voto == 50) {
-		bolim += 1;
+		bolim += bolim++;
 		System.out.print("Se a eleição fosse hoje, qual seria sua intençao de voto? ");
 		voto = sc.nextInt();
 		}
