@@ -32,7 +32,7 @@ public class Atividade2Array {
 		System.out.print("Informe sua altura: ");
 		altura[i] = sc.nextDouble();
 		while (altura[i] <= 0 || altura[i] >= 3) {
-			System.out.println("Altura inválida! Informe a altura correta: ");
+			System.out.print("Altura inválida! Informe a altura correta: ");
 			altura[i] = sc.nextDouble();
 		}
 		sc.nextLine();
@@ -42,7 +42,7 @@ public class Atividade2Array {
 	
 	for (int i = 0 ; i < 5 ; i++) {
 		System.out.println("--------------------------------------------");
-		System.out.println(nome[i] + " tem " + idade[i] + " anos e mede " + altura[i] + " metros.");
+		System.out.println(nome[i] + " tem " + idade[i] + " anos e mede " + altura[i] + " metros de altura.");
 		System.out.println("--------------------------------------------");
 	}
 
