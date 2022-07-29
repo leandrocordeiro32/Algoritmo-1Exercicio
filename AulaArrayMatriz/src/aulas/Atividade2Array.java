@@ -10,9 +10,9 @@ public class Atividade2Array {
 		
 	Scanner sc = new Scanner(System.in);
 	
+	String[] nome = new String [5];
 	int[] idade = new int[5];
 	double[] altura = new double[5];
-	String[] nome = new String [5];
 	
 	for (int i = 0 ; i < 5 ; i++) {
 		

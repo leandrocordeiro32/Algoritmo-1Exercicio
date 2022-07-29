@@ -12,7 +12,7 @@ public class Atividade1Array {
 		double total = 0.0;
 		double media = 0.0;
 		
-		for (int i = 0 ; i < 4 ; i++) {
+		for (int i = 0 ; i < notas.length ; i++) {
 			System.out.print("Informe a nota: ");
 			notas[i] = sc.nextDouble();
 			while (notas[i] < 0 || notas[i] > 10) {
@@ -28,8 +28,8 @@ public class Atividade1Array {
 		}
 		
 		for (int i = 0 ; i < notas.length ; i++) {
-			total = total + notas[i];
-			media = total /4;
+			total += notas[i];
+			media = total /notas.length;
 		}
 		
 		System.out.println("");

@@ -21,7 +21,7 @@ public class ArrayMatriz {
 	
 	System.out.println("Quantidade de posições: " + passadoTeclado.length);*/
 	
-	int[] numeros = {1 , 10 , 25 , 9 , 50};
+	//int[] numeros = {1 , 10 , 25 , 9 , 50};
 	
 	/*for (int i = 0; i < numeros.length; i++) {
 		System.out.println("Posição: " + i + ", valor no array: " + numeros[i]);
@@ -30,7 +30,7 @@ public class ArrayMatriz {
 	//for each = para ate;
 	/*for(int i : numeros) {
 		System.out.println(i);
-	}*/
+	}
 	
 	System.out.println("Entre com a quantidade de nomes: ");
 	int qtd = sc.nextInt();
@@ -47,7 +47,25 @@ public class ArrayMatriz {
 	}
 	for(String nome : nomes) {
 		System.out.println("Nome: " + nome);
+	}*/
+	
+	//Array Multidimensional
+	
+	int [][] numerosArray = new int [3][3];
+	int contador = 10;
+	
+	for (int i = 0 ; i < numerosArray.length ; i++) {
+		
+		for(int j = 0 ; j < numerosArray.length ; j++) {
+			
+			numerosArray[i][j] = contador;
+			System.out.print(numerosArray[i][j] + "\t");
+			contador++;
+		}
+		
+		System.out.println("\n");
 	}
+		
 
 	sc.close();
 	
