@@ -8,13 +8,13 @@ public class Atividade3Funcao {
 		// Crie um programa para calcular a formula do segundo grau, retorne valor de X1 e X2.
 		Scanner sc = new Scanner(System.in);
 		
-		double a , b , c , bhaskara = 0;
+		double a = 0.0, b = 0.0, c = 0.0;
 		
 		System.out.print("Insira o valor de A: ");
 		a = sc.nextDouble();
 		while (a == 0) {
-			System.out.print("Insira o valor de A diferente de 0: ");
-		a = sc.nextDouble();
+			System.out.print("Valor de A precisa ser maior que 0! Informe o valor de A: ");
+			a = sc.nextDouble();
 		}
 		
 		System.out.print("Insira o valor de B: ");
@@ -23,24 +23,29 @@ public class Atividade3Funcao {
 		System.out.print("Insira o valor de C: ");
 		c = sc.nextDouble();
 		
-		System.out.println("O valor de X¹ é " + equacaoGrauX (a , b , c));
-		System.out.println("O valor de X² é " + equacaoGrauXX (a , b , c));
+		equacaoGrau (a , b , c);
 		
 		sc.close();
 		
 	}
 	
-	public static double equacaoGrauX (double a , double b , double c) {
-		return ((-b) + bhaskara (a , b , c)) / (2 * a);
+	public static void equacaoGrau (double a , double b , double c) {
+		
+		double delta = Math.pow(b, 2) - (4 * a * c);
+		
+		if (delta < 0) {
+			System.out.print("\nDelta com valor negativo! Equação não pode ser calculada!");
+		}
+		else {
+			double x1 = (-b + Math.sqrt(delta)) / (2 * a);
+			double x2 = (-b - Math.sqrt(delta)) / (2 * a);
+			
+			System.out.print("\nO valor de x¹ é " + x1 + ".\n");
+			System.out.print("O valor de x² é " + x2 + ".");
+		}
+
+		
 	}
 	
-	public static double equacaoGrauXX (double a , double b , double c) {
-		return ((-b) - bhaskara (a , b , c)) / (2 * a);
-
-	}
 	
-	public static double bhaskara (double a , double b , double c) {
-		return Math.sqrt((b * b) - (4 * a * c));
-	}
-
 }

@@ -18,23 +18,22 @@ public class Atividade2Funcao {
 		System.out.print("Insira o valor do litro da gasolina: ");
 		gasol = sc.nextDouble();
 		
-		calc = calcComb(alcool , gasol);
-		
 		System.out.println(" ");
 		
-		if (calc < 0.7) {
-			System.out.println("É mais vantajoso abastecer com ÁLCOOL!");
-		}
-		else if (calc > 0.71) {
-			System.out.println("É mais vantajoso abastecer com GASOLINA!");
-		}
+		calcComb(alcool , gasol);
+		
 		sc.close();
 	
 
 	}
 	
-	public static double calcComb (double alcool , double gasol) {
-		return alcool / gasol;
+	public static void calcComb (double alcool , double gasol) {
+		if (alcool / gasol >= 0.70) {
+			System.out.println("É mais vantajoso abastecer com GASOLINA!");
+		}
+		else {
+			System.out.println("É mais vantajoso abastecer com ÁLCOOL!");
+		}
 
 	}
 
