@@ -4,12 +4,13 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import entities.Herois;
+import entities.Select;
 
 public class Program {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Herois herois = new Herois();
+		Select select = new Select();
 		ArrayList<String> superPoderes = new ArrayList<>();
 
 		System.out.println("Você está no Cadastro Universal de Heróis e Vilões - CUHV\n");
@@ -18,7 +19,10 @@ public class Program {
 		
 		switch (Character.toUpperCase(selecao)) {
 		case 'H':
-			herois.herois();;
+			select.herois();
+			break;
+		case 'V':
+			select.viloes();
 		}
 		sc.close();
 
