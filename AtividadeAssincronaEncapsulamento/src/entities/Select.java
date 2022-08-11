@@ -14,7 +14,7 @@ public class Select {
 		
 		char option = 0;
 		
-		System.out.print("Informe o nome da Heroína ou do Herói: ");
+		System.out.print("\nInforme o nome da Heroína ou do Herói: ");
 		herois.setNomeDeHeroi(sc.nextLine());
 		
 		System.out.print("Informe a ID Secreta: ");
@@ -74,7 +74,7 @@ public class Select {
 		
 		char option = 0;
 		
-		System.out.print("Informe o nome da Vilã ou do Vilão: ");
+		System.out.print("\nInforme o nome da Vilã ou do Vilão: ");
 		viloes.setNomeDeVilao(sc.nextLine());
 		
 		System.out.print("Informe a ID Secreta: ");

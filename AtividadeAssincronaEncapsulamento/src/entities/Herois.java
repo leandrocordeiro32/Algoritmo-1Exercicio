@@ -15,6 +15,7 @@ public class Herois {
 	
 	public Herois (String nomeDeHeroi , String identidadeSecreta , String universo ,  String grupoLiga ,
 			ArrayList<String> superPoderes , boolean estaNaAtiva) {
+		
 		this.nomeDeHeroi = nomeDeHeroi;
 		this.identidadeSecreta = identidadeSecreta;
 		this.universo = universo;

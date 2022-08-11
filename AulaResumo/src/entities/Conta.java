@@ -5,7 +5,8 @@ public class Conta {
 	private int agencia;
 	private int conta;
 	private double saldo;
-	private String titularDaConta;
+	private Clientes titularDaConta;
+
 	
 	public Conta() {
 		
@@ -29,19 +30,30 @@ public class Conta {
 	public void Depositar (double valor) {
 		this.saldo += valor;
 	}
-	public boolean Sacar (double valor) {
-		if (valor > this.saldo) {
-			return false;
-		}else {
+	public boolean Sacar (double valor) throws ContaException { 
+		if (valor <= this.saldo) { 
 			this.saldo -= valor;
 			return true;
+		}else {
+			throw new ContaException("Saldo indisponível!");
+			//return false;
 		}
 	}
-
-	public String getTitularDaConta () {
+	
+	public boolean Transferir(double valor , Conta destino) throws ContaException {
+		if(valor <= this.saldo) {
+			this.saldo -= valor;
+			destino.saldo += valor;
+			return true;
+		} else {
+			throw new ContaException("Saldo indisponível!");
+			//return false;
+		}
+	}
+	public Clientes getTitularDaConta () {
 		return titularDaConta;
 	}
-	public void setTitularDaConta(String titularDaConta) {
+	public void setTitularDaConta(Clientes titularDaConta) {
 		this.titularDaConta = titularDaConta;
 	}
 
