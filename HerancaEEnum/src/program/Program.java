@@ -26,30 +26,31 @@ public class Program {
 		System.out.println("Saldo da Conta: " + conta.getSaldo());
 		System.out.println("Saldo da Conta Corrente: " + contaCorrente.getSaldo());*/
 		
+		
+		System.out.print("Entre com o nome de titular: ");
+		cliente.setNome(sc.nextLine());
+		
+		System.out.print("Entre com o CPF de titular: ");
+		cliente.setCpf(sc.nextLine());
+		
+		contaCorrente.setTitular(cliente);
+		contaPoupanca.setTitular(cliente);
+				
+		System.out.print("Informe o número da Agência: ");
+		conta.setAgencia(sc.nextInt());
+		
+		System.out.print("Informe o número da Conta: ");
+		conta.setNumeroConta(sc.nextInt());
+
 		System.out.print("\nDeseja acessar a (C) conta-corrente ou a (P) poupança? ");
 		char option = sc.next().charAt(0);
 		
 		if (Character.toUpperCase(option) == 'C') {
-			
-			System.out.print("Entre com o nome de titular: ");
-			cliente.setNome(sc.nextLine());
-			
-			System.out.print("Entre com o CPF de titular: ");
-			cliente.setCpf(sc.nextLine());
-					
-			conta.setTitular(cliente);
-
-			System.out.print("Informe o número da Agência: ");
-			conta.setAgencia(sc.nextInt());
-			
-			System.out.print("Informe o número da Conta: ");
-			conta.setNumeroConta(sc.nextInt());
-			
 			System.out.print("Digite o valor para depósito: ");
 			contaCorrente.Depositar(sc.nextDouble());
 						
-			System.out.print("Conta gerada!");
-
+			System.out.print("Conta gerada!\n");
+			
 			System.out.print(contaCorrente);
 			
 			System.out.print("\nEntre com o valor do saque: ");
@@ -59,25 +60,10 @@ public class Program {
 			System.out.print(contaCorrente.getSaldo());
 			
 		} else if (Character.toUpperCase(option) == 'P') {
-			
-			System.out.print("Entre com o nome de titular: ");
-			cliente.setNome(sc.nextLine());
-			
-			System.out.print("Entre com o CPF de titular: ");
-			cliente.setCpf(sc.nextLine());
-					
-			conta.setTitular(cliente);
-
-			System.out.print("Informe o número da Agência: ");
-			conta.setAgencia(sc.nextInt());
-			
-			System.out.print("Informe o número da Conta: ");
-			conta.setNumeroConta(sc.nextInt());
-			
 			System.out.print("\nDigite o valor para depósito: ");
 			contaPoupanca.Depositar(sc.nextDouble());
 			
-			System.out.print("Poupança gerada");
+			System.out.print("Poupança gerada!\n");
 			
 			System.out.print(contaPoupanca);
 			
@@ -90,7 +76,8 @@ public class Program {
 			
 			System.out.println("Opção inválida");
 		}
-				
+
+		
 		sc.close();
 	}
 

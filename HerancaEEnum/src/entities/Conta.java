@@ -54,6 +54,7 @@ public class Conta {
 		return "Titular da conta: " + titular.getNome()
 				+ "\nCPF: " + titular.getCpf()
 				+ "\nAgencia: " + agencia
+				+ "\nConta: " + numeroConta
 				+ "\nSaldo: " + saldo;
 	}
 }
