@@ -30,14 +30,15 @@ public class Carro {
 	public int getAno() {
 		return ano;
 	}
-	public void setAno(int ano) {
-		this.ano = ano;
+	public void setAno(int ano) throws Exception {
+		if (ano >= 2019) {
+			this.ano = ano;
+		} else {
+			throw new Exception("Não pode ser efetuado cadastro. Carro com ano incompatível (mais que 3 anos de uso)");
+		}
 	}
 	public double getValor() {
 		return valor;
-	}
-	public void setValor(double valor) {
-		this.valor = valor;
 	}
 	public String getMarca() {
 		return marca;
@@ -87,14 +88,16 @@ public class Carro {
 	public void setDadosCliente(Cliente dadosCliente) {
 		this.dadosCliente = dadosCliente;
 	}
+	public void ValorDeCompra(double valor) {
+		this.valor += (valor + (valor * 0.4));
+	}
 	@Override
 	public String toString() {
 		
-		return "\nRECIBO DE COMPRA\n\n" + dadosCliente.getNome() + ", portador do CPF " + dadosCliente.getCpf() + ", residente no endereço "
+		return "\nRECIBO DE COMPRA\n\n" + dadosCliente.getNome() + ", portador(a) do CPF " + dadosCliente.getCpf() + ", residente no endereço "
 				+ dadosCliente.getEndereco() + ", telefone " + dadosCliente.getTelefone() + ",\nadquiriu o veículo Marca "
-				+ getMarca() + ", modelo " + getModelo() + ", ano " + getAno() + ", cor " + getCor()
-				+ ".\nO veículo é do tipo " + getTipo() + ", com câmbio " + getCambio() + " e pode ser abastecido com "
-				+ getCombustivel() + ".\nO veículo é " + getEstado() + " e foi vendido por Leona's Car pelo valor R$ " 
-				+ getValor();
+				+ marca + ", modelo " + modelo + ", ano " + ano + ", cor " + cor + ".\nO veículo é do tipo " + tipo + ", com câmbio " + cambio + " e pode ser abastecido com "
+				+ combustivel + ".\nO veículo é " + estado + " e foi vendido por Leona's Car pelo valor de R$ " 
+				+ valor;
 	}
 }

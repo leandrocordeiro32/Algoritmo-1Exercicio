@@ -19,5 +19,8 @@ public class ContaCorrente extends Conta {
 			return false;
 		}
 	}
+	public void Depositar (double valor) {
+		this.saldo += valor;
+	}
 
 }
