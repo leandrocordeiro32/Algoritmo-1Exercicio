@@ -8,11 +8,24 @@ public class Carro {
 	
 	private int ano;
 	private double valor;
-	private String modelo , cor , tipo , cambio , combustivel , estado;
+	private String marca , modelo , cor , tipo , combustivel , cambio , estado;
 	private Cliente dadosCliente;
 	
 	public Carro() {
 		
+	}
+	public Carro (Cliente dadosCliente , String marca , String modelo , int ano , String cor , String tipo ,
+			String cambio , String combustivel , String estado , double valor) {
+		this.dadosCliente = dadosCliente;
+		this.marca = marca;
+		this.modelo = modelo;
+		this.ano = ano;
+		this.cor = cor;
+		this.tipo = tipo;
+		this.cambio = cambio;
+		this.combustivel = combustivel;
+		this.estado = estado;
+		this.valor = valor;
 	}
 	public int getAno() {
 		return ano;
@@ -25,6 +38,12 @@ public class Carro {
 	}
 	public void setValor(double valor) {
 		this.valor = valor;
+	}
+	public String getMarca() {
+		return marca;
+	}
+	public void setMarca(String marca) {
+		this.marca = marca;
 	}
 	public String getModelo(){
 		return modelo;
@@ -67,5 +86,15 @@ public class Carro {
 	}
 	public void setDadosCliente(Cliente dadosCliente) {
 		this.dadosCliente = dadosCliente;
+	}
+	@Override
+	public String toString() {
+		
+		return "\nRECIBO DE COMPRA\n\n" + dadosCliente.getNome() + ", portador do CPF " + dadosCliente.getCpf() + ", residente no endereço "
+				+ dadosCliente.getEndereco() + ", telefone " + dadosCliente.getTelefone() + ",\nadquiriu o veículo Marca "
+				+ getMarca() + ", modelo " + getModelo() + ", ano " + getAno() + ", cor " + getCor()
+				+ ".\nO veículo é do tipo " + getTipo() + ", com câmbio " + getCambio() + " e pode ser abastecido com "
+				+ getCombustivel() + ".\nO veículo é " + getEstado() + " e foi vendido por Leona's Car pelo valor R$ " 
+				+ getValor();
 	}
 }

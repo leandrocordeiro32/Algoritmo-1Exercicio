@@ -3,8 +3,7 @@ package entities;
 public class Cliente {
 //Cliente: Nome, cpf, telefone, endereço;
 	
-	private String nome , endereco;
-	private int cpf , telefone;
+	private String nome , endereco , cpf , telefone;
 	
 	public Cliente() {
 		
@@ -21,16 +20,16 @@ public class Cliente {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-	public int getCpf() {
+	public String getCpf() {
 		return cpf;
 	}
-	public void setCpf(int cpf) {
+	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	public int getTelefone() {
+	public String getTelefone() {
 		return telefone;
 	}
-	public void setTelefone(int telefone) {
+	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
 }
