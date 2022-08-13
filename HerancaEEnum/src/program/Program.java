@@ -33,14 +33,23 @@ public class Program {
 		System.out.print("Entre com o CPF de titular: ");
 		cliente.setCpf(sc.nextLine());
 		
+		conta.setTitular(cliente);
 		contaCorrente.setTitular(cliente);
 		contaPoupanca.setTitular(cliente);
 				
 		System.out.print("Informe o número da Agência: ");
-		conta.setAgencia(sc.nextInt());
+		int agencia = sc.nextInt();
+		conta.setAgencia(agencia);
+		contaCorrente.setAgencia(agencia);
+		contaPoupanca.setAgencia(agencia);
 		
 		System.out.print("Informe o número da Conta: ");
-		conta.setNumeroConta(sc.nextInt());
+		int numeroConta = sc.nextInt();
+		conta.setNumeroConta(numeroConta);
+		contaCorrente.setNumeroConta(numeroConta);
+		contaPoupanca.setNumeroConta(numeroConta);
+
+		System.out.println(conta);
 
 		System.out.print("\nDeseja acessar a (C) conta-corrente ou a (P) poupança? ");
 		char option = sc.next().charAt(0);
