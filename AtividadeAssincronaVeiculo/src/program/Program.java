@@ -12,8 +12,10 @@ public class Program {
 	public static void main(String[] args) {
 
 	Scanner sc = new Scanner(System.in);
-	Carro carro;
-	Moto moto;
+	//Carro carro;
+	//Moto moto;
+	Veiculo carro;
+	Veiculo moto;
 	
 	ArrayList<Veiculo> veiculos = new ArrayList<>();
 	
@@ -72,7 +74,10 @@ public class Program {
 		
 		veiculos.add(moto);
 		
-		break;	
+		break;
+		
+	default:
+		System.out.println("Opção inválida!");
 		
 	}
 	
@@ -82,7 +87,7 @@ public class Program {
 	} while (Character.toUpperCase(continua) == 'S');
 	
 	for (Veiculo listaVeiculos : veiculos) {
-		System.out.println(veiculos);
+		System.out.println(listaVeiculos);
 	}
 	
 	sc.close();
