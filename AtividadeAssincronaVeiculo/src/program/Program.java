@@ -15,13 +15,14 @@ public class Program {
 	Carro carro;
 	Moto moto;
 	
-	ArrayList<Veiculo> veiculo = new ArrayList<>();
+	ArrayList<Veiculo> veiculos = new ArrayList<>();
 	
 	char continua = 0;
 	
-	do {
 	System.out.println("Bem-vinda ao SiCaV - Sistema de Cadastro de Veículos\n");
-	System.out.print("Para iniciar o cadastro de veículo, selecione o tipo (1) para carro ou (2) para moto: ");
+
+	do {
+	System.out.print("\nPara iniciar o cadastro de veículo, selecione o tipo (1) para carro ou (2) para moto: ");
 	
 	int option = sc.nextInt();
 	
@@ -46,7 +47,7 @@ public class Program {
 		System.out.print("\nO carro pode ser abastecido com qual(is) combustivel(is)? ");
 		carro.setCombustivel(sc.nextLine());
 		
-		veiculo.add (carro);
+		veiculos.add (carro);
 		
 		break;
 		
@@ -69,7 +70,7 @@ public class Program {
 		System.out.print("\nA moto pode ser abastecida com qual(is) combustivel(is)? ");
 		moto.setCombustivel(sc.nextLine());
 		
-		veiculo.add(moto);
+		veiculos.add(moto);
 		
 		break;	
 		
@@ -80,8 +81,8 @@ public class Program {
 
 	} while (Character.toUpperCase(continua) == 'S');
 	
-	for (Veiculo listaVeiculos : veiculo) {
-		System.out.println(veiculo);
+	for (Veiculo listaVeiculos : veiculos) {
+		System.out.println(veiculos);
 	}
 	
 	sc.close();

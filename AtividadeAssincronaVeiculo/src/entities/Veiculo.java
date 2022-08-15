@@ -58,6 +58,6 @@ public class Veiculo {
 				+ "\nPotência ou cilindradas do motor: " + motor
 				+ "\nQuantidade de pneus instalados no veículo: " + pneus
 				+ "\nQuantidade de passageiros que o veículo transporta: " + passageiros
-				+"\nPode ser abastecido com: " + combustivel;
+				+"\nPode ser abastecido com: " + combustivel + "\n";
 	}
 }
