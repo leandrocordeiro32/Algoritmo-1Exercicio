@@ -14,8 +14,8 @@ public class Program {
 	Scanner sc = new Scanner(System.in);
 	//Carro carro;
 	//Moto moto;
-	Veiculo carro;
-	Veiculo moto;
+	Carro carro;
+	Moto moto;
 	
 	ArrayList<Veiculo> veiculos = new ArrayList<>();
 	
@@ -44,10 +44,17 @@ public class Program {
 		System.out.print("\nQuantidade de passageiros que o veículo transporta: ");
 		carro.setPassageiros(sc.nextInt());
 		
+		System.out.print("\nQuantidade de portas: ");
+		carro.setPortas(sc.nextInt());
+		
 		sc.nextLine();
 		
 		System.out.print("\nO carro pode ser abastecido com qual(is) combustivel(is)? ");
 		carro.setCombustivel(sc.nextLine());
+		
+		System.out.print("\nO carro tem ar condicionado? (tem / não tem): ");
+		carro.setArCondicionado(sc.nextLine());
+		
 		
 		veiculos.add (carro);
 		
@@ -66,8 +73,14 @@ public class Program {
 		
 		System.out.print("\nQuantidade de passageiros que o veículo transporta: ");
 		moto.setPassageiros(sc.nextInt());
-		
+				
 		sc.nextLine();
+		
+		System.out.print("\nPossui baú bagageiro: ");
+		moto.setBau(sc.nextLine());
+		
+		System.out.print("\nTipo de roda (raiadas, liga leve, comstar ou fibra de carbono): ");
+		moto.setAro(sc.nextLine());
 		
 		System.out.print("\nA moto pode ser abastecida com qual(is) combustivel(is)? ");
 		moto.setCombustivel(sc.nextLine());
