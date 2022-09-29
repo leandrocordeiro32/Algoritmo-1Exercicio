@@ -1,0 +1,10 @@
+package br.com.voeairlines.treinamentopoo;
+
+public class Algoritmo03 {
+	
+	public String imprimeProduto() {
+		
+		return "28 x 43 = " + 28 * 43;
+	}
+
+}

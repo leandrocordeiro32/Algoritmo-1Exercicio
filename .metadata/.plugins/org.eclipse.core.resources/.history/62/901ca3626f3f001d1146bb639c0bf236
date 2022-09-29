@@ -1,0 +1,10 @@
+package br.com.voeairlines.treinamentopoo;
+
+public class Algoritmo04 {
+	
+	public void imprimeMedia(double media) {
+		
+		media = (8 + 9 + 7) / 3;
+	}
+
+}

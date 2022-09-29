@@ -1,0 +1,72 @@
+package br.com.voeairlines.treinamentopoo;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner (System.in);
+		
+		//JOptionPane.showInputDialog("Escolha uma opção de 1 a 26: ");
+		
+		int opcao = Integer.parseInt(JOptionPane.showInputDialog
+				(null, "Escolha uma opção de 1 a 26: " , "SENAI Taguatinga" , 1));
+		
+		switch(opcao) {
+		
+		case 1:
+			
+			/*Algoritmo01 alg1 = new Algoritmo01();
+			System.out.print("Resultado: " + alg1.imprimirMensagem());*/
+			
+			new Algoritmo01().imprimirMensagem();
+			
+			break;
+			
+		case 2:
+			
+			new Algoritmo02().imprimaNome();
+			
+			break;
+			
+		case 3:
+			
+			new Algoritmo03().imprimeProduto();
+			
+			break;
+			
+		case 4:
+			
+			new Algoritmo04().imprimeMedia();
+			
+			break;
+			
+		case 5:
+			
+			Algoritmo05 alg5 = new Algoritmo05();
+			System.out.print("Informe um número inteiro: ");
+			alg5.setNumero(sc.nextInt());
+			
+			System.out.println(alg5);
+			
+			break;
+			
+		case 6:
+			Algoritmo06 alg6 = new Algoritmo06();
+			System.out.print("Informe um número inteiro: ");
+			alg6.setNumero1(sc.nextInt());
+			System.out.print("Informe outro número inteiro: ");
+			alg6.setNumero2(sc.nextInt());
+			
+			System.out.println(alg6);
+			
+		}
+		
+		sc.close();
+	}
+
+}

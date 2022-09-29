@@ -1,0 +1,14 @@
+package br.com.voeairlines.treinamentopoo;
+
+import javax.swing.JOptionPane;
+
+public class Algoritmo08 {
+	
+	private String nome , endereco , telefone;
+	
+	public void imprimeDados() {
+		
+		nome = JOptionPane.showInputDialog(null, "Informe o nome: ", "SENAI Taguatinga" , 1);
+	}
+
+}

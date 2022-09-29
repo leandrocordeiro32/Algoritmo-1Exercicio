@@ -1,0 +1,10 @@
+package br.com.voeairlines.treinamentopoo;
+
+public class Algoritmo02 {
+	
+	public String imprimaNome() {
+		
+		return "Leandro Cordeiro";
+	}
+
+}

@@ -1,0 +1,12 @@
+package br.com.voeairlines.treinamentopoo;
+
+import javax.swing.JOptionPane;
+
+public class Algoritmo01 {
+	
+	public void imprimirMensagem() {
+		
+		return JOptionPane.showMessageDialog ("Você só aprende a programar programando!!!");
+	}
+
+}

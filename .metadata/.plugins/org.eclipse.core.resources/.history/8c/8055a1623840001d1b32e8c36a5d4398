@@ -1,0 +1,12 @@
+package br.com.voeairlines.treinamentopoo;
+
+import javax.swing.JOptionPane;
+
+public class Algoritmo03 {
+	
+	public void imprimeProduto() {
+		
+		JOptionPane.showMessageDialog(null, "28 x 43 = " + (28 * 43), "SENAI Taguatinga", 1);
+	}
+
+}

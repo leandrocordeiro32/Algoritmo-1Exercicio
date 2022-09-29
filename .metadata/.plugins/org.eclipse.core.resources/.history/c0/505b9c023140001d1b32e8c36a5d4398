@@ -1,0 +1,30 @@
+package br.com.voeairlines.treinamentopoo;
+
+public class Algoritmo05 {
+
+	private int numero;
+	
+	public Algoritmo05 () {
+		
+	}
+	public Algoritmo05 (int numero) {
+		
+		this.numero = numero;
+				
+	}
+	
+	public int getNumero() {
+		
+		return numero;
+	}
+	
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	
+	@Override
+	public String toString() {
+
+		return "O número escolhido foi " + numero;
+	}
+}

@@ -1,0 +1,73 @@
+package br.com.voeairlines.treinamentopoo;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner (System.in);
+		
+		//JOptionPane.showInputDialog("Escolha uma opção de 1 a 26: ");
+		
+		do {
+		int opcao = Integer.parseInt(JOptionPane.showInputDialog
+				(null, "Escolha uma opção de 1 a 26: " , "SENAI Taguatinga" , 1));
+		
+		switch(opcao) {
+		
+		case 1:
+			
+			/*Algoritmo01 alg1 = new Algoritmo01();
+			System.out.print("Resultado: " + alg1.imprimirMensagem());*/
+			
+			new Algoritmo01().imprimirMensagem();
+			
+			break;
+			
+		case 2:
+			
+			new Algoritmo02().imprimaNome();
+			
+			break;
+			
+		case 3:
+			
+			new Algoritmo03().imprimeProduto();
+			
+			break;
+			
+		case 4:
+			
+			new Algoritmo04().imprimeMedia();
+			
+			break;
+			
+		case 5:
+			
+			new Algoritmo05().imprimaNumero();
+
+			break;
+			
+		case 6:
+			new Algoritmo06().imprimaNumero();
+			
+			break;
+			
+			default:
+				
+				JOptionPane.showMessageDialog(null, "Opção Inválida");
+			
+		}
+		
+		JOptionPane.showConfirmDialog (null, "Deseja escolher outra opção?", "SENAI Taguatinga", JOptionPane.YES_NO_OPTION);
+		
+		} while (JOptionPane.YES_NO_OPTION == 'y');
+		
+		sc.close();
+	}
+
+}

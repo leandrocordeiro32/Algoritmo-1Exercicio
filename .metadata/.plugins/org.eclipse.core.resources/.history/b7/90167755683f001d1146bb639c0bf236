@@ -1,0 +1,28 @@
+package br.com.voeairlines.treinamentopoo;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.print("Escolha uma opção de 1 a 26: ");
+		
+		int opcao = Integer.parseInt(sc.nextLine());
+		
+		switch(opcao) {
+		
+		case 1:
+			
+			Algoritmo01 alg1 = new Algoritmo01();
+			System.out.print("Resultado: " + alg1.imprimirMensagem());
+			
+		}
+		
+		sc.close();
+	}
+
+}
