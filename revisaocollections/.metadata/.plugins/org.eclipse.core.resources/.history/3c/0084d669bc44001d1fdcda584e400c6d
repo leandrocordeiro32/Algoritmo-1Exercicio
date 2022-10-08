@@ -1,0 +1,16 @@
+package br.com.senai.revisao;
+
+
+public class Aeronave {
+
+	public String mostrarLetreiroDigital() {
+		
+		return "VoeAirlines, voando com você!";
+	}
+	
+	/*public void mostrarLetreiroDigital() {
+		
+		JOptionPane.showMessageDialog(null, "VoeAirlines, voando com você!",
+				"Mensagem 2" , 1);
+	}*/
+}

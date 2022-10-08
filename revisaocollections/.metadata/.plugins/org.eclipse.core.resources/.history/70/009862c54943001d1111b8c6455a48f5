@@ -1,0 +1,16 @@
+package br.com.senai.revisao;
+
+import javax.swing.JOptionPane;
+
+public class Aeronave {
+
+	public String mostrarLetreiroDigital() {
+		
+		return "VoeAirlines, voando com você!";
+	}
+	
+	public void mostrarLetreiroDigital(String texto) {
+		
+		JOptionPane.showMessageDialog(null, "VoeAirlines, voando com você!");
+	}
+}
